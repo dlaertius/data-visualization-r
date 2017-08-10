@@ -4,8 +4,8 @@ This repo aims to help in data visualization, more specifically for compare gene
 <h4> Output examples: </h4>
 
 <h6> Crossover operators compared. </h6>
-<img src="data-visualization-r/tree/master/images/cx.pdf" alt="CX Comparsion" style="width:128px;height:128px;">
+<img src="https://github.com/dlaertius/data-visualization-r/tree/master/images/cx.pdf" alt="CX Comparsion" style="width:128px;height:128px;">
 
 <h6> Mutation rates compared. </h6>
-<img src="data-visualization-r/tree/master/images/mx.pdf" alt="MX Comparsion" style="width:128px;height:128px;">
+<img src="https://github.com/dlaertius/data-visualization-r/tree/master/images/mx.pdf" alt="MX Comparsion" style="width:128px;height:128px;">
 

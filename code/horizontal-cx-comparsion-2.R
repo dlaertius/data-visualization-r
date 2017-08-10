@@ -807,13 +807,15 @@ y2 <-
     0.7363017827272416
   )
 
-x <- c(1:400)
+generations_number <- 400
 
-pdf(file = "Documents/USP/CB/aa.pdf")
+x <- c(1:generations_number)
 
-par(pch = 25, col = "black") # plotting symbol and color
-par(mar = rep(3, 4)) # all plots on one page
-par("mar")
+pdf(file = "output.pdf")
+
+#par(pch = 25, col = "black") # plotting symbol and color
+#par(mar = rep(3, 4)) # all plots on one page
+#par("mar")
 
 #heading = paste("Algoritmo Genético para Modelo NK \n com seleção por RTS e crossover 1-Ponte e Uniforme")
 #heading = paste("GA for NK Model \n Uniform CX with RTS (green) and RWS (blue)")
@@ -825,8 +827,12 @@ plot(
   type = "n",
   main = "Algoritmo Genético para Modelo NK \n com seleção por RTS e crossover 1-Ponto e Uniforme",
   xlab = "Gerações",
-  ylab = "Fitness Mediano"
+  ylab = "Fitness Mediano",
 )
+
+#Range between the axis y = side 1 and x = side 2.
+axis(side=2, at=seq(0, 0.9, by = 0.052))
+axis(side=1, at=seq(0, generations_number, by=50))
 
 length(y)
 length(y2)
@@ -845,7 +851,9 @@ legend(
   bty = "n"
 )
 
+
+
 dev.off()
 
 
-plot(x, y)
+#plot(x, y) #xlab = "Waves",ylab = "Difficulty Levels"
